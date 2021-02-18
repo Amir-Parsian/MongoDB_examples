@@ -23,6 +23,6 @@ total += values[i];
 return total;
 }""")
 
-result = db.m12_d31.map_reduce(map, reduce, "myresults")
+result = db.m12_d31_h01_50.map_reduce(map, reduce, "myresults")
 for doc in result.find():
     print(doc)
